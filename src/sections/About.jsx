@@ -50,7 +50,7 @@ const About = () => {
             </div>
             <div>
               <p className="grid-headtext">Нахожусь в Санкт-Петербурге</p>
-              <Button name="" isBeam containerClass="w-full mt-10" />
+              <Button isBeam containerClass="w-full mt-10" />
             </div>
           </div>
         </div>
