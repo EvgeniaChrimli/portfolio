@@ -1,7 +1,9 @@
 import { useGLTF } from "@react-three/drei";
 
+const modelPath = `${import.meta.env.BASE_URL}models/room.glb`;
+
 function Room(props) {
-  const { nodes, materials } = useGLTF("/models/room.glb");
+  const { nodes, materials } = useGLTF(modelPath);
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -92,5 +94,5 @@ function Room(props) {
   );
 }
 
-useGLTF.preload("/models/room.glb");
+useGLTF.preload(modelPath);
 export default Room;

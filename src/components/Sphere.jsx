@@ -1,8 +1,9 @@
 import React, { useRef } from "react";
 import { Float, useGLTF } from "@react-three/drei";
+const modelPath = `${import.meta.env.BASE_URL}models/shpere.glb`;
 
 const Sphere = (props) => {
-  const { nodes, materials } = useGLTF("/models/sphere.glb");
+  const { nodes, materials } = useGLTF(modelPath);
   const sphereRef = useRef();
 
   return (
@@ -20,5 +21,5 @@ const Sphere = (props) => {
   );
 };
 
-useGLTF.preload("/models/sphere.glb");
+useGLTF.preload(modelPath);
 export default Sphere;
