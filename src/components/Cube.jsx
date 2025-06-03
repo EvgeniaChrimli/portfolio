@@ -3,8 +3,10 @@ import { useGSAP } from "@gsap/react";
 import { useRef, useState } from "react";
 import { Float, useGLTF, useTexture } from "@react-three/drei";
 
+const modelPath = `${import.meta.env.BASE_URL}models/cube.glb`;
+
 const Cube = ({ ...props }) => {
-  const { nodes } = useGLTF("/models/cube.glb");
+  const { nodes } = useGLTF(modelPath);
 
   const texture = useTexture("/textures/cube.png");
 
@@ -51,6 +53,6 @@ const Cube = ({ ...props }) => {
   );
 };
 
-useGLTF.preload("/models/cube.glb");
+useGLTF.preload(modelPath);
 
 export default Cube;

@@ -11,7 +11,9 @@ const Rings = ({ position }) => {
     }
   }, []);
 
-  const texture = useTexture("/textures/rings.png");
+  const modelPath = `${import.meta.env.BASE_URL}textures/rings.png`;
+
+  const texture = useTexture(modelPath);
 
   useGSAP(
     () => {
