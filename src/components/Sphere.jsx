@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Float, useGLTF } from "@react-three/drei";
-const modelPath = `${import.meta.env.BASE_URL}models/shpere.glb`;
+const modelPath = `${import.meta.env.BASE_URL}models/sphere.glb`;
 
 const Sphere = (props) => {
   const { nodes, materials } = useGLTF(modelPath);
