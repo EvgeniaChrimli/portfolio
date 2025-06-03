@@ -1,3 +1,4 @@
+const base = import.meta.env.BASE_URL;
 export const myProjects = [
   {
     title: "Kanban board",
@@ -5,7 +6,7 @@ export const myProjects = [
     subdesc: "",
     href: "https://evgeniachrimli.github.io/kanbanBoard/",
     texture: "/textures/project/project1.mp4",
-    logo: "/assets/kamb.png",
+    logo: `${base}assets/kamb.png`,
     logoStyle: {
       backgroundColor: "#F5F5F5",
       border: "0.2px solid #36201D",
@@ -16,22 +17,22 @@ export const myProjects = [
       {
         id: 1,
         name: "React.js",
-        path: "/assets/react.svg",
+        path: `${base}assets/react.svg`,
       },
       {
         id: 2,
         name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
+        path: `${base}assets/tailwindcss.png`,
       },
       {
         id: 3,
         name: "TypeScript",
-        path: "/assets/typescript.png",
+        path: `${base}assets/typescript.png`,
       },
       {
         id: 4,
         name: "Dnd-kit",
-        path: "/assets/dnd-kit-logo.svg",
+        path: `${base}assets/dnd-kit-logo.svg`,
       },
     ],
   },
@@ -41,8 +42,7 @@ export const myProjects = [
     subdesc:
       "Также реализована смена темы(createContext, useContext), можно перейти на страницу репо с более подробным описанием, есть график(Chart.js), который отображает статистику по языкам. Можно добавить или удалить из избранного любой репозиторий.",
     href: "https://github.com/EvgeniaChrimli/gitApp",
-    texture: "/textures/project/project2.mp4",
-    logo: "/assets/github.png",
+    logo: `${base}assets/github.png`,
     logoStyle: {
       backgroundColor: "#13202F",
       border: "0.2px solid #17293E",
@@ -52,18 +52,18 @@ export const myProjects = [
       {
         id: 1,
         name: "React.js",
-        path: "/assets/react.svg",
+        path: `${base}assets/react.svg`,
       },
 
       {
         id: 3,
         name: "TypeScript",
-        path: "/assets/typescript.png",
+        path: `${base}assets/typescript.png`,
       },
       {
         id: 4,
         name: "Redux toolki",
-        path: "/assets/redux.svg",
+        path: `${base}assets/redux.svg`,
       },
     ],
   },
@@ -72,8 +72,7 @@ export const myProjects = [
     desc: "Верстка по макету Figma. Реализованы слайдеры с использованием библиотеки Slider Swiper, адаптивная верстка, динамическая генерация страниц из массива, модальные окна.",
     subdesc: "",
     href: "https://evgeniachrimli.github.io/infiniti/",
-    texture: "/textures/project/project3.mp4",
-    logo: "/assets/figma.svg",
+    logo: `${base}assets/figma.svg`,
     logoStyle: {
       backgroundColor: "#60f5a1",
       background:
@@ -81,17 +80,16 @@ export const myProjects = [
       border: "0.2px solid rgba(208, 213, 221, 1)",
       boxShadow: "0px 0px 60px 0px rgba(35, 131, 96, 0.3)",
     },
-    spotlight: "/assets/spotlight3.png",
     tags: [
       {
         id: 1,
         name: "JavaScript",
-        path: "/assets/js.svg",
+        path: `${base}assets/js.svg`,
       },
       {
         id: 2,
         name: "Swiper Slider",
-        path: "assets/swip.png",
+        path: `${base}assets/swip.png`,
       },
     ],
   },
@@ -100,24 +98,22 @@ export const myProjects = [
     desc: "Верстка по макету Figma. Реализованы слайдеры с использованием библиотеки Slider Swiper, адаптивная верстка, динамическая генерация страниц из массива, модальные окна.",
     subdesc: "",
     href: "https://evgeniachrimli.github.io/service/",
-    texture: "/textures/project/project4.mp4",
-    logo: "/assets/figma.svg",
+    logo: `${base}assets/figma.svg`,
     logoStyle: {
       backgroundColor: "#0E1F38",
       border: "0.2px solid #0E2D58",
       boxShadow: "0px 0px 60px 0px #2F67B64D",
     },
-    spotlight: "/assets/spotlight4.png",
     tags: [
       {
         id: 1,
         name: "JavaScript",
-        path: "/assets/js.svg",
+        path: `${base}assets/js.svg`,
       },
       {
         id: 2,
         name: "Swiper Slider",
-        path: "assets/swip.png",
+        path: `${base}assets/swip.png`,
       },
     ],
   },
@@ -164,21 +160,21 @@ export const about = [
     id: 1,
     title:
       "Ответственно отношусь к работе, не боюсь браться за задачи, с которыми ранее не сталкивалась, лучше попробовать и научиться, чем побояться и отказаться. Я быстро учусь, усидчива, могу запомнить большой объем информации. Пунктуальна, ценю чужое и свое время. Умею правильно и четко излагать свои мысли письменно/устно. Знаю английский на уровне умения читать документацию с Google Translate(pre intermediate).",
-    icon: "/assets/woman.svg",
+    icon: `${base}assets/woman.svg`,
     animation: "victory",
   },
   {
     id: 2,
     title:
       "Образование: бакалвр, РАНХиГС СКАГС, факультет финансы и кредит. Год окончания 2020",
-    icon: "/assets/education.svg",
+    icon: `${base}assets/education.svg`,
     animation: "clapping",
   },
   {
     id: 3,
     title:
       "Технические навыки: HTML; CSS/SASS, адаптивная верстка, БЭМ, media queries; Bootstarp, Tailwind; Figma(для работы с макетами); JavaScript(ES6+); работа с API; React: react router dom, react hooks, redux toolkit, react context, asynkThunk, модульный css; Three.js, базовые настройки для рендера и управления 3д моделями; TypeScript; пакетный менеджер(npm); GIT; AI инструменты(чат гпт, прочие нейросети для генерации контента, дизайна сайтов)",
-    icon: "/assets/tech.svg",
+    icon: `${base}assets/tech.svg`,
     animation: "salute",
   },
 ];

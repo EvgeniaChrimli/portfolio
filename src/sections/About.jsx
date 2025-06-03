@@ -1,6 +1,9 @@
 import Globe from "react-globe.gl";
 import Button from "../components/Button";
 
+{
+  `${import.meta.env.BASE_URL}assets/grid1.png`;
+}
 const About = () => {
   return (
     <section className="c-space my-20">
@@ -8,7 +11,7 @@ const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
-              src="/assets/grid1.png"
+              src={`${import.meta.env.BASE_URL}assets/grid1.png`}
               alt="grid-1"
               className="w-20 sm:h-[276px] h-fit object-contain"
             />
@@ -21,7 +24,7 @@ const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
-              src="/assets/grid3.png"
+              src={`${import.meta.env.BASE_URL}assets/grid3.png`}
               alt="grid2"
               className="w-full h-[150px] sm:h-[276px]  object-cover"
             />

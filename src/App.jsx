@@ -15,7 +15,11 @@ function App() {
             href="https://github.com/EvgeniaChrimli"
           >
             GitHub{" "}
-            <img className="w-3 h-3" src="/assets/arrow-up.png" alt="arrow" />
+            <img
+              className="w-3 h-3"
+              src={`${import.meta.env.BASE_URL}assets/arrow-up.png`}
+              alt="arrow"
+            />
           </a>
         </div>
         <Hero />
