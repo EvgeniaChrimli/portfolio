@@ -8,7 +8,7 @@ const modelPath = `${import.meta.env.BASE_URL}models/cube.glb`;
 const Cube = ({ ...props }) => {
   const { nodes } = useGLTF(modelPath);
 
-  const texture = useTexture("/textures/cube.png");
+  const texture = useTexture(`${import.meta.env.BASE_URL}textures/cube.png`);
 
   const cubeRef = useRef();
   const [hovered, setHovered] = useState(false);
