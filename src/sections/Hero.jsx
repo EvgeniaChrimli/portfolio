@@ -1,6 +1,6 @@
 import { PerspectiveCamera } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 import Room from "../components/Room";
 import CanvasLoader from "../components/CanvasLoader";
 import { useMediaQuery } from "react-responsive";
@@ -8,7 +8,6 @@ import { calculateSizes } from "../constants";
 import Target from "../components/Target";
 import ReactLogo from "../components/ReactLogo";
 import Cube from "../components/Cube";
-import Rings from "../components/Rings";
 import HeroCamera from "../components/HeroCamera";
 import Sphere from "../components/Sphere";
 import Button from "../components/Button";
