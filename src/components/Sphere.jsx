@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { Float, useGLTF } from "@react-three/drei";
 
 const Sphere = (props) => {
-  const { nodes, materials } = useGLTF("/models/sphere.glb");
+  const { nodes, materials } = useGLTF("./models/sphere.glb");
   const sphereRef = useRef();
 
   return (
@@ -20,5 +20,5 @@ const Sphere = (props) => {
   );
 };
 
-useGLTF.preload("/models/sphere.glb");
+useGLTF.preload("./models/sphere.glb");
 export default Sphere;

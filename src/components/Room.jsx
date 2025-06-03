@@ -1,7 +1,7 @@
 import { useGLTF } from "@react-three/drei";
 
 function Room(props) {
-  const { nodes, materials } = useGLTF("/models/room.glb");
+  const { nodes, materials } = useGLTF("./models/room.glb");
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -92,5 +92,5 @@ function Room(props) {
   );
 }
 
-useGLTF.preload("/models/room.glb");
+useGLTF.preload("./models/room.glb");
 export default Room;
